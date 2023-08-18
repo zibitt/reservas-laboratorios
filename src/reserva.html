@@ -31,55 +31,72 @@
                 <form action="https://formsubmit.co/clinicaasanorte1421@gmail.com" method="POST"> 
                     
                         
-                            <label for="NomeCompleto"><h2>Nome completo do professor ou tutor :</h2></label>
-                                <input type="text" id="NomeCompleto" name="Nome" placeholder="Digite seu nome completo" required class="largura"><br>
+                            <label for="NomeCompleto"><h2>Nome completo do professor ou tutor </h2></label>
+                                <input type="text" id="NomeCompleto" name="Nome" placeholder="Digite seu nome completo:" required class="largura"><br>
                                         
                             <label for="data"><h2>Data da Reserva</h2></label>
                                 <input type="date" id="data" name="data" required><br>
                                 
 
                             <h2>Turno da aula</h2>
-                            <label for="turno-matutino">Matutino</label>
+                            
                                 <input type="radio" id="turno-matutino" name="Turno-Da-Aula" required value="Matutino">
-                            <label for="turno-noturno">Noturno</label>
+                                <label for="turno-matutino">Matutino</label><br>
+                            
                                 <input type="radio" id="turno-noturno" name="Turno-Da-Aula" required value="Noturno">
+                                <label for="turno-noturno">Noturno</label>
 
                                 <br><br>
 
-                            <label for="materiais"><h2>Materiais Utilizados e quantidades : </h2><br>
+                            <label for="materiais"><h2>Materiais Utilizados e quantidades</h2><br>
                                     
-                                    <textarea name="Materiais" id="materiais" cols="45 " rows="9" placeholder=" Descrever TODOS os materias necessários na aula pois a preparação acontece com antecedência de 72h ÚTEIS."></textarea><br>
+                                    <textarea name="Materiais" id="materiais" cols="45 " rows="9" placeholder=" Descrever TODOS os materias necessários na aula pois a preparação acontece com antecedência de 72h ÚTEIS."></textarea>
                                 
+                                    <br><br>
 
                             <label for="coor-curso"><h2>Coordenador do Curso</h2></label>
-                                <input type="text" name="Coordenador-curso" id="coor-curso" required  placeholder="Nome do Coordenador" class="largura"><br><br>
+                                <input type="text" name="Coordenador-curso" id="coor-curso" required  placeholder="Nome do Coordenador:" class="largura">
+
+                                <br><br>
 
                             <label for="email"><h2>E-mail</h2></label>               
-                                <input type="email" name="E-Mail" id="email" required placeholder="Digite seu E-MAIL" class="largura"><br><br>
+                                <input type="email" name="E-Mail" id="email" required placeholder="Digite seu E-MAIL:" class="largura">
 
+                                <br><br>
 
                             <label for="whatsapp"><h2>Whatsapp</h2></label>
-                                <input type="tel" name="Whatsapp" id="whatsapp" placeholder="(xx) x xxxxxxxx" required class="largura"><br><br>
-
+                                <input type="tel" name="Whatsapp" id="whatsapp" placeholder="(xx) x xxxxxxxx" required class="largura">
+                               
+                                <br><br>
 
                             <h2>Quantidade de Alunos </h2><em>Capacidade máxima dos Laboratórios são de 30 alunos</em><br>
-                            <label for="ate-15">Até 15 Alunos</label>
-                                <input type="radio" name="Capacidade-alunos" id="ate-15" class="radio" required value="ate 15"> 
+                            
+                                <input type="radio" name="Capacidade-alunos" id="ate-15" class="radio" required value="ate 15">
+                                <label for="ate-15">Até 15 Alunos</label> 
 
-                            <label for="ate-15-a-30">De 15 a 30 Alunos</label>  
-                                <input type="radio" name="Capacidade-alunos" id="ate-15-a-30" class="radio" required value="15 a 30"><br><br> 
+                                <br>
+
+                                <input type="radio" name="Capacidade-alunos" id="ate-15-a-30" class="radio" required value="15 a 30">
+                                <label for="ate-15-a-30">De 15 a 30 Alunos</label> 
+
+                                <br><br>
 
                             <h2>Modalidade</h2>
-                            <label for="moda-presencial">Presencial</label>
+                            
                                 <input type="radio" name="Modalidade" id="moda-presencial" required  value="Presencial">
-                            <label for="moda-ead">EAD</label>
-                                <input type="radio" name="Modalidade" id="moda-ead" required value="EAD">    
-                            <label for="moda-pos-graduacao">Pós Graduação</label>
-                                <input type="radio" name="Modalidade" id="moda-pos-graduacao" required value="Pós Graduação"><br><br>
+                                <label for="moda-presencial">Presencial</label><br>
+                            
+                                <input type="radio" name="Modalidade" id="moda-ead" required value="EAD">  
+                                <label for="moda-ead">EAD</label><br>  
+                            
+                                <input type="radio" name="Modalidade" id="moda-pos-graduacao" required value="Pós Graduação">
+                                <label for="moda-pos-graduacao">Pós Graduação</label>
                                 
+                                <br><br>
 
                             <h2>Laboratório desejado</h2>
                                 <select name="Laboratório-Desejado" id="laboratorios"  required>
+                                    <option >Selecionar um laboratório desejado</option>
                                     <option value="Enfermagem I">Enfermagem I</option>
                                     <option value="Enfermagem II">Enfermagem II</option>
                                     <option value="Fisioterapia">Fisioterapia</option>
@@ -91,38 +108,47 @@
                                     <option value="Engenharias">Engenharias</option>
                                 </select><br><br>
 
-                                
-                                <h2>Curso</h2>
-                                    <label for="Biomedicina">Biomedicina</label><br>
-                                    <input type="checkbox" name="Curso" id="Biomedicina" value="Biomedicina"><br>
+                                <div id="cursos"> 
+                                    <h2>Curso</h2>
+                                        
+                                        <input type="checkbox" name="Curso" id="Biomedicina" value="Biomedicina">
+                                        <label for="Biomedicina">Biomedicina</label><br>
 
-                                    <label for="Enfermagem">Enfermagem</label><br>
-                                    <input type="checkbox" name="Curso" id="Enfermagem" value="Enfermagem"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Enfermagem" value="Enfermagem">
+                                        <label for="Enfermagem">Enfermagem</label><br>
 
-                                    <label for="Fisioterapia">Fisioterapia</label><br>
-                                    <input type="checkbox" name="Curso" id="Fisioterapia" value="Fisioterapia"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Fisioterapia" value="Fisioterapia">
+                                        <label for="Fisioterapia">Fisioterapia</label><br>
 
-                                    <label for="Nutrição">Nutrição</label><br>
-                                    <input type="checkbox" name="Curso" id="Nutrição" value="Nutrição"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Nutrição" value="Nutrição">
+                                        <label for="Nutrição">Nutrição</label><br>
 
-                                    <label for="Agronomia">Agronomia</label><br>
-                                    <input type="checkbox" name="Curso" id="Agronomia" value="Agronomia"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Agronomia" value="Agronomia">
+                                        <label for="Agronomia">Agronomia</label><br>
 
-                                    <label for="Psicologia">Psicologia</label><br>
-                                    <input type="checkbox" name="Curso" id="Psicologia" value="Psicologia"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Psicologia" value="Psicologia">
+                                        <label for="Psicologia">Psicologia</label><br>
 
-                                    <label for="Farmácia">Farmácia</label><br>
-                                    <input type="checkbox" name="Curso" id="Farmácia" value="Farmácia"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Farmácia" value="Farmácia">
+                                        <label for="Farmácia">Farmácia</label><br>
 
-                                    <label for="Outros">Outros</label><br>
-                                    <input type="checkbox" name="Curso" id="Outros" value="Outros"><br>
+                                        
+                                        <input type="checkbox" name="Curso" id="Outros" value="Outros">
+                                        <label for="Outros">Outros</label><br>
 
-                                    <input type="hidden" name="_next" value="https://zibitt.github.io/reservas-laboratorios/src/thanks.html">
+                                        <input type="hidden" name="_next" value="https://zibitt.github.io/reservas-laboratorios/src/thanks.html">
+                                        
 
-                                    <button type="submit" class="botao">Enviar</button>
+                                        <button type="submit" class="botao">Enviar</button>
                                     
                             
-                            
+                                </div> 
 
                             
                     

@@ -133,8 +133,20 @@ nav{
      }
      label{
         font-size: larger;
+        
                 
      }
+    
+     input, textarea{
+        background-color:white;
+        color: rgb(32, 9, 238);
+     }
+        #cursos input{
+            margin: 15px;
+            
+            
+         }                
+     
 
      .largura{
         width: 300px;
@@ -143,6 +155,8 @@ nav{
      }
      select{
         padding: 10px;
+        font-size: large;
+        
      }
 
      .contato{        
