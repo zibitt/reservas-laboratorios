@@ -66,16 +66,16 @@ nav{
     }   
 
     .container{          
-        border-radius: 30px;        
-        background: #b4e9ca2c;
+        border-radius: 50px;        
+        background: #aed0e0d0;
         width: 100%; 
         display: flex;
         justify-content: center;
          }
 
-     .quadro-de-aviso{
+     .quadro-de-aviso{       
         padding: 30px;
-        background-color: rgba(13, 94, 10, 0.123);
+        background-color: rgba(175, 226, 173, 0.897);
         border-radius: 10px;
         
 
